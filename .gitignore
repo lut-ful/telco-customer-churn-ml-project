@@ -1,1 +1,6 @@
+venv/
+evn/
+ENV/
+.myenv
+.vscode
 churn_venv
