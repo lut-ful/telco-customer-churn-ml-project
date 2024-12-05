@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: Tel-co-Customer-Churn
+Version: 0.1.0
+Summary: Predict behavior to retain customers.
+Home-page: https://github.com/lut-ful/telco-customer-churn-ml-project
+Author: Md Lutful Kabir
+Author-email: lutful2004@gmail.com
+Classifier: Development Status :: 3 - Beta
+Classifier: Intended Audience :: ML Engineers
+Classifier: Programming Language :: Python >= 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: ipykernel
+Requires-Dist: setuptools
+Requires-Dist: dvc
+Requires-Dist: feast
+Requires-Dist: mlflow
+Requires-Dist: flask
+
+# Telco Customer Churn
+
+## Dataset Overview
+
+The dataset provides detailed information about customers, including:
+
+### Churn Information
+- Identifies customers who left the service within the last month (Column: Churn).
+
+### Service Details
+- Services subscribed to by each customer:
+
+    - Phone
+    - Multiple lines
+    - Internet
+    - Online security
+    - Online backup
+    - Device protection
+    - Tech support
+    - Streaming TV and movies
+
+### Account Information
+- Key metrics such as:
+    - Duration as a customer (tenure)
+    - Contract type
+    - Payment methods
+    - Paperless billing status
+    - Monthly charges
+    - Total charges
+
+### Demographic Information
+- Includes attributes such as:
+    - Gender
+    - Age range
+    - Partner status
+    - Dependents
+
+## Project Inspiration
+This dataset is ideal for exploring predictive modeling techniques and learning more about customer behavior analytics. By analyzing this data, users can:
+- Build machine learning models to predict customer churn.
+- Develop insights into key factors driving customer behavior.
+- Design and implement focused retention programs to reduce churn rates.
