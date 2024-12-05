@@ -8,14 +8,14 @@ with open('README.md','r',encoding='utf-8') as f:
 with open('requirements.txt') as f:
     required=f.read().splitlines()
 setup(
-    name="mlops_modular_project",
+    name="Tel-co Customer Churn",
     version="0.1.0",
     author="Md Lutful Kabir",
     author_email="lutful2004@gmail.com",
-    description="A modular MLOps Pipeline Project",
+    description="Predict behavior to retain customers.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/lut-ful/Modular-Workflow-and-project-setup",
+    url="https://github.com/lut-ful/telco-customer-churn-ml-project",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Beta",
