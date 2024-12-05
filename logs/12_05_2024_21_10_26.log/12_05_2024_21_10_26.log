@@ -1,0 +1,30 @@
+[2024-12-05 21:10:30,874] 22 root - INFO - Data Ingestion has been started
+[2024-12-05 21:10:30,874] 24 root - INFO - Data reading using Pandas from local file system
+[2024-12-05 21:10:30,894] 26 root - INFO - Data Reading has been completed
+[2024-12-05 21:10:30,939] 30 root - INFO - Raw data has been stored
+[2024-12-05 21:10:30,943] 33 root - INFO - Raw data has been splitted into Train and Test set
+[2024-12-05 21:10:30,994] 38 root - INFO - Data Ingestion has been completed!
+[2024-12-05 21:10:30,996] 49 root - INFO - Created feature store configuration at /home/lutful/telco-customer-churn-ml-project/feature_repo/feature_store.yaml
+[2024-12-05 21:10:30,996] 53 root - INFO - Configuration file content:
+project: Churn Prediction
+provider: local
+registry: data/registry.db
+online_store:
+  type: sqlite
+offline_store:
+  type: file
+entity_key_serialization_version: 2
+[2024-12-05 21:10:31,606] 60 root - ERROR - Error in initialization: 1 validation error for RepoConfig
+project
+  Value error, Project name, Churn Prediction, should only have alphanumerical values and underscores but not start with an underscore. [type=value_error, input_value='Churn Prediction', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/value_error
+at /home/lutful/telco-customer-churn-ml-project/feature_repo/feature_store.yaml
+[2024-12-05 21:10:31,607] 49 root - ERROR - 
+→Error occured in Python script:
+→File: /home/lutful/telco-customer-churn-ml-project/src/components/data_transformation.py
+→Line number:56
+→Error message: 1 validation error for RepoConfig
+project
+  Value error, Project name, Churn Prediction, should only have alphanumerical values and underscores but not start with an underscore. [type=value_error, input_value='Churn Prediction', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/value_error
+at /home/lutful/telco-customer-churn-ml-project/feature_repo/feature_store.yaml

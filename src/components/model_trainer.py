@@ -9,6 +9,7 @@ from datetime import datetime
 from src.logger import logging
 from src.exception import CustomException
 from src.components.data_transformation import DataTransformation
+from src.components.data_ingestion import DataIngestion
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from dataclasses import dataclass
 from sklearn.model_selection import GridSearchCV
@@ -21,7 +22,7 @@ from src.utils import save_object
 class ModelTrainingConfig:
     train_model_file_path = os.path.join("artifacts/model_trainer", "model.pkl")
     mlflow_uri = "http://localhost:5000"
-    experiment_name = "Modular_Workflow_Prediction_Pipeline"
+    experiment_name = "Churn Customer Prediction"
 
 class ModelTrainer:
     def __init__(self):

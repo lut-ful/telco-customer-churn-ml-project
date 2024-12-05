@@ -33,7 +33,7 @@ class DataTransformation:
             feature_store_yaml_path = os.path.join(repo_path, "feature_store.yaml")
             
             # Simplified, minimal feature store configuration
-            feature_store_yaml = """project: Churn Prediction
+            feature_store_yaml = """project: Churn_Prediction
 provider: local
 registry: data/registry.db
 online_store:

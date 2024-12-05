@@ -1,0 +1,58 @@
+[2024-12-05 21:32:44,812] 22 root - INFO - Data Ingestion has been started
+[2024-12-05 21:32:44,813] 24 root - INFO - Data reading using Pandas from local file system
+[2024-12-05 21:32:44,835] 26 root - INFO - Data Reading has been completed
+[2024-12-05 21:32:44,884] 30 root - INFO - Raw data has been stored
+[2024-12-05 21:32:44,887] 33 root - INFO - Raw data has been splitted into Train and Test set
+[2024-12-05 21:32:44,938] 38 root - INFO - Data Ingestion has been completed!
+[2024-12-05 21:32:44,939] 49 root - INFO - Created feature store configuration at /home/lutful/telco-customer-churn-ml-project/feature_repo/feature_store.yaml
+[2024-12-05 21:32:44,939] 53 root - INFO - Configuration file content:
+project: Churn_Prediction
+provider: local
+registry: data/registry.db
+online_store:
+  type: sqlite
+offline_store:
+  type: file
+entity_key_serialization_version: 2
+[2024-12-05 21:32:45,430] 57 root - INFO - Feature store initialized successfully
+[2024-12-05 21:32:45,456] 112 root - INFO - Read train and test data completed
+[2024-12-05 21:32:45,457] 116 root - INFO - target Column Churn
+[2024-12-05 21:32:45,458] 121 root - INFO - Numerical Columns ['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges']
+[2024-12-05 21:32:45,458] 125 root - INFO - Categorical Columns ['gender', 'Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod']
+[2024-12-05 21:32:45,458] 127 root - INFO - Obtaining preprocessing object
+[2024-12-05 21:32:45,458] 65 root - INFO - Data Transformation Started
+[2024-12-05 21:32:45,461] 136 root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-12-05 21:32:45,521] 141 root - INFO - Starting feature store operations
+[2024-12-05 21:32:45,554] 186 root - INFO - Saved feature data to feature_repo/data/train_features.parquet
+[2024-12-05 21:32:45,556] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:45,560] 409 root - WARNING - Cannot use sqlite_vec for vector search
+[2024-12-05 21:32:45,562] 231 root - INFO - Applied entity and feature view for train
+[2024-12-05 21:32:45,563] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:45,566] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:45,566] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:49,293] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:50,266] 238 root - INFO - Materialized features successfully
+[2024-12-05 21:32:50,266] 145 root - INFO - Pushed training data to feature store
+[2024-12-05 21:32:50,276] 186 root - INFO - Saved feature data to feature_repo/data/test_features.parquet
+[2024-12-05 21:32:50,278] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:50,285] 231 root - INFO - Applied entity and feature view for test
+[2024-12-05 21:32:50,286] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:50,293] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:50,294] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:54,034] 920 feast.infra.registry.registry - INFO - Registry cache expired, so refreshing
+[2024-12-05 21:32:55,207] 238 root - INFO - Materialized features successfully
+[2024-12-05 21:32:55,207] 148 root - INFO - Pushed testing data to feature store
+[2024-12-05 21:32:55,605] 124 root - INFO - Starting model training pipeline
+[2024-12-05 21:32:55,605] 167 root - INFO - Training RandomForest
+[2024-12-05 21:32:55,725] 53 root - INFO - Started Training RandomForest
+[2024-12-05 21:33:18,873] 74 root - INFO - Best Parameters for RandomForest: {'best_class_weight': 'balanced', 'best_max_depth': 10, 'best_min_samples_split': 2, 'best_n_estimators': 50}
+[2024-12-05 21:33:23,761] 115 root - INFO - Completed Training RandomForest
+[2024-12-05 21:33:23,779] 167 root - INFO - Training DecisionTree
+[2024-12-05 21:33:23,803] 53 root - INFO - Started Training DecisionTree
+[2024-12-05 21:33:31,631] 74 root - INFO - Best Parameters for DecisionTree: {'best_class_weight': 'balanced', 'best_criterion': 'entropy', 'best_max_depth': 4, 'best_min_samples_split': 2}
+[2024-12-05 21:33:35,508] 115 root - INFO - Completed Training DecisionTree
+[2024-12-05 21:33:35,524] 167 root - INFO - Training LogisticRegression
+[2024-12-05 21:33:35,545] 53 root - INFO - Started Training LogisticRegression
+[2024-12-05 21:33:47,026] 74 root - INFO - Best Parameters for LogisticRegression: {'best_C': 0.01, 'best_class_weight': 'balanced', 'best_solver': 'liblinear'}
+[2024-12-05 21:33:50,938] 115 root - INFO - Completed Training LogisticRegression
+[2024-12-05 21:33:51,053] 184 root - INFO - Best model: RandomForest with accuracy:0.7821149751596878

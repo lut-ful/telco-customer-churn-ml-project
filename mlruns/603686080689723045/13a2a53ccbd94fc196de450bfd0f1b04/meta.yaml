@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/603686080689723045/13a2a53ccbd94fc196de450bfd0f1b04/artifacts
+end_time: 1733412574680
+entry_point_name: ''
+experiment_id: '603686080689723045'
+lifecycle_stage: active
+run_id: 13a2a53ccbd94fc196de450bfd0f1b04
+run_name: RandomForest_training_run_20241205_212908
+run_uuid: 13a2a53ccbd94fc196de450bfd0f1b04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733412549015
+status: 3
+tags: []
+user_id: lutful

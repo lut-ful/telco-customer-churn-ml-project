@@ -1,0 +1,7 @@
+[2024-12-05 21:19:28,372] 226 root - INFO - Starting Data Ingestion
+[2024-12-05 21:19:28,374] 247 root - ERROR - Error in training pipeline: name 'DataIngestion' is not defined
+[2024-12-05 21:19:28,375] 49 root - ERROR - 
+→Error occured in Python script:
+→File: /home/lutful/telco-customer-churn-ml-project/src/components/model_trainer.py
+→Line number:227
+→Error message: name 'DataIngestion' is not defined

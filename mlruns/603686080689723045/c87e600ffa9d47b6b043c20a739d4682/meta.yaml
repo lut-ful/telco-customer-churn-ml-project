@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/603686080689723045/c87e600ffa9d47b6b043c20a739d4682/artifacts
+end_time: 1733412616306
+entry_point_name: ''
+experiment_id: '603686080689723045'
+lifecycle_stage: active
+run_id: c87e600ffa9d47b6b043c20a739d4682
+run_name: LogisticRegression_training_run_20241205_212908
+run_uuid: c87e600ffa9d47b6b043c20a739d4682
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733412587628
+status: 3
+tags: []
+user_id: lutful
